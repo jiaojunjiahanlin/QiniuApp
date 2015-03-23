@@ -87,7 +87,8 @@ namespace WindowsFormsApplication1
 
         private void 图片高级处理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Pfop1 cof = new Pfop1();
+            cof.ShowDialog();
         }
 
         private void 图像水印借口ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -100,5 +101,18 @@ namespace WindowsFormsApplication1
             Qiniu.Conf.Config.ACCESS_KEY = textBox1.Text.ToString().Trim();
             Qiniu.Conf.Config.SECRET_KEY = textBox2.Text.ToString().Trim();
         }
+
+        private void 私有资源下载ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            download dn = new download();
+            dn.ShowDialog();
+        }
+
+        private void 单个文件上传ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UP dn = new UP();
+            dn.ShowDialog();
+        }
+        
     }
 }

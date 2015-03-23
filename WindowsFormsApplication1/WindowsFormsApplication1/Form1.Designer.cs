@@ -37,6 +37,7 @@
             this.复制单个文件ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.移动单个文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除单个文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.私有资源下载ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.批量文件操作ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查看批量文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.复制批量文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +51,8 @@
             this.图片高级处理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.图像水印借口ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.视频处理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.持久化处理操作ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.视频转码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -64,6 +67,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.单个文件上传ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -81,7 +85,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.查看单个文件ToolStripMenuItem,
             this.批量文件操作ToolStripMenuItem,
-            this.数据处理借口ToolStripMenuItem});
+            this.数据处理借口ToolStripMenuItem,
+            this.持久化处理操作ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(812, 24);
@@ -94,7 +99,9 @@
             this.复制单个文件ToolStripMenuItem,
             this.复制单个文件ToolStripMenuItem1,
             this.移动单个文件ToolStripMenuItem,
-            this.删除单个文件ToolStripMenuItem});
+            this.删除单个文件ToolStripMenuItem,
+            this.私有资源下载ToolStripMenuItem,
+            this.单个文件上传ToolStripMenuItem});
             this.查看单个文件ToolStripMenuItem.Name = "查看单个文件ToolStripMenuItem";
             this.查看单个文件ToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
             this.查看单个文件ToolStripMenuItem.Text = "单个文件操作";
@@ -102,7 +109,7 @@
             // 复制单个文件ToolStripMenuItem
             // 
             this.复制单个文件ToolStripMenuItem.Name = "复制单个文件ToolStripMenuItem";
-            this.复制单个文件ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.复制单个文件ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.复制单个文件ToolStripMenuItem.Text = "查看单个文件";
             this.复制单个文件ToolStripMenuItem.Click += new System.EventHandler(this.复制单个文件ToolStripMenuItem_Click);
             // 
@@ -127,6 +134,13 @@
             this.删除单个文件ToolStripMenuItem.Text = "删除单个文件";
             this.删除单个文件ToolStripMenuItem.Click += new System.EventHandler(this.删除单个文件ToolStripMenuItem_Click);
             // 
+            // 私有资源下载ToolStripMenuItem
+            // 
+            this.私有资源下载ToolStripMenuItem.Name = "私有资源下载ToolStripMenuItem";
+            this.私有资源下载ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.私有资源下载ToolStripMenuItem.Text = "私有资源下载";
+            this.私有资源下载ToolStripMenuItem.Click += new System.EventHandler(this.私有资源下载ToolStripMenuItem_Click);
+            // 
             // 批量文件操作ToolStripMenuItem
             // 
             this.批量文件操作ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -141,28 +155,28 @@
             // 查看批量文件ToolStripMenuItem
             // 
             this.查看批量文件ToolStripMenuItem.Name = "查看批量文件ToolStripMenuItem";
-            this.查看批量文件ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.查看批量文件ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.查看批量文件ToolStripMenuItem.Text = "查看批量文件";
             this.查看批量文件ToolStripMenuItem.Click += new System.EventHandler(this.查看批量文件ToolStripMenuItem_Click);
             // 
             // 复制批量文件ToolStripMenuItem
             // 
             this.复制批量文件ToolStripMenuItem.Name = "复制批量文件ToolStripMenuItem";
-            this.复制批量文件ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.复制批量文件ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.复制批量文件ToolStripMenuItem.Text = "复制批量文件";
             this.复制批量文件ToolStripMenuItem.Click += new System.EventHandler(this.复制批量文件ToolStripMenuItem_Click);
             // 
             // 移动批量文件ToolStripMenuItem
             // 
             this.移动批量文件ToolStripMenuItem.Name = "移动批量文件ToolStripMenuItem";
-            this.移动批量文件ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.移动批量文件ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.移动批量文件ToolStripMenuItem.Text = "移动批量文件";
             this.移动批量文件ToolStripMenuItem.Click += new System.EventHandler(this.移动批量文件ToolStripMenuItem_Click);
             // 
             // 删除批量文件ToolStripMenuItem
             // 
             this.删除批量文件ToolStripMenuItem.Name = "删除批量文件ToolStripMenuItem";
-            this.删除批量文件ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.删除批量文件ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.删除批量文件ToolStripMenuItem.Text = "删除批量文件";
             this.删除批量文件ToolStripMenuItem.Click += new System.EventHandler(this.删除批量文件ToolStripMenuItem_Click);
             // 
@@ -184,41 +198,41 @@
             this.图片高级处理ToolStripMenuItem,
             this.图像水印借口ToolStripMenuItem});
             this.图像处理ToolStripMenuItem.Name = "图像处理ToolStripMenuItem";
-            this.图像处理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.图像处理ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.图像处理ToolStripMenuItem.Text = "图像处理";
             // 
             // 查看图片属性ToolStripMenuItem
             // 
             this.查看图片属性ToolStripMenuItem.Name = "查看图片属性ToolStripMenuItem";
-            this.查看图片属性ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.查看图片属性ToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.查看图片属性ToolStripMenuItem.Text = "查看图片属性";
             this.查看图片属性ToolStripMenuItem.Click += new System.EventHandler(this.查看图片属性ToolStripMenuItem_Click);
             // 
             // 查看图片EXIFToolStripMenuItem
             // 
             this.查看图片EXIFToolStripMenuItem.Name = "查看图片EXIFToolStripMenuItem";
-            this.查看图片EXIFToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.查看图片EXIFToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.查看图片EXIFToolStripMenuItem.Text = "查看图片EXIF";
             this.查看图片EXIFToolStripMenuItem.Click += new System.EventHandler(this.查看图片EXIFToolStripMenuItem_Click);
             // 
             // 生成图片预览ToolStripMenuItem
             // 
             this.生成图片预览ToolStripMenuItem.Name = "生成图片预览ToolStripMenuItem";
-            this.生成图片预览ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.生成图片预览ToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.生成图片预览ToolStripMenuItem.Text = "生成图片预览";
             this.生成图片预览ToolStripMenuItem.Click += new System.EventHandler(this.生成图片预览ToolStripMenuItem_Click);
             // 
             // 图片高级处理ToolStripMenuItem
             // 
             this.图片高级处理ToolStripMenuItem.Name = "图片高级处理ToolStripMenuItem";
-            this.图片高级处理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.图片高级处理ToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.图片高级处理ToolStripMenuItem.Text = "图片高级处理";
             this.图片高级处理ToolStripMenuItem.Click += new System.EventHandler(this.图片高级处理ToolStripMenuItem_Click);
             // 
             // 图像水印借口ToolStripMenuItem
             // 
             this.图像水印借口ToolStripMenuItem.Name = "图像水印借口ToolStripMenuItem";
-            this.图像水印借口ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.图像水印借口ToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.图像水印借口ToolStripMenuItem.Text = "图像水印借口";
             this.图像水印借口ToolStripMenuItem.Click += new System.EventHandler(this.图像水印借口ToolStripMenuItem_Click);
             // 
@@ -227,6 +241,20 @@
             this.视频处理ToolStripMenuItem.Name = "视频处理ToolStripMenuItem";
             this.视频处理ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.视频处理ToolStripMenuItem.Text = "视频处理";
+            // 
+            // 持久化处理操作ToolStripMenuItem
+            // 
+            this.持久化处理操作ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.视频转码ToolStripMenuItem});
+            this.持久化处理操作ToolStripMenuItem.Name = "持久化处理操作ToolStripMenuItem";
+            this.持久化处理操作ToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
+            this.持久化处理操作ToolStripMenuItem.Text = "持久化处理操作";
+            // 
+            // 视频转码ToolStripMenuItem
+            // 
+            this.视频转码ToolStripMenuItem.Name = "视频转码ToolStripMenuItem";
+            this.视频转码ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.视频转码ToolStripMenuItem.Text = "视频转码";
             // 
             // pictureBox1
             // 
@@ -362,6 +390,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // 单个文件上传ToolStripMenuItem
+            // 
+            this.单个文件上传ToolStripMenuItem.Name = "单个文件上传ToolStripMenuItem";
+            this.单个文件上传ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.单个文件上传ToolStripMenuItem.Text = "单个文件上传";
+            this.单个文件上传ToolStripMenuItem.Click += new System.EventHandler(this.单个文件上传ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -437,6 +472,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem 私有资源下载ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 持久化处理操作ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 视频转码ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 单个文件上传ToolStripMenuItem;
     }
 }
 

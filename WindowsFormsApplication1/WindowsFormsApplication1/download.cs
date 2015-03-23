@@ -8,26 +8,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Qiniu.RS;
-using Qiniu.Conf;
-using Qiniu.RSF;
-using Qiniu.RPC;
-
 
 namespace WindowsFormsApplication1
 {
-    public partial class BatchState : Form
+    public partial class download : Form
     {
-        public BatchState()
+        public download()
         {
             InitializeComponent();
         }
 
-
-
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            textBox3.Text = MakeGetToken(textBox1.Text, textBox2.Text);
         }
 
+        public static string  MakeGetToken(string domain, string key)
+        {
+            string baseUrl = GetPolicy.MakeBaseUrl(domain, key);
+            string private_url = GetPolicy.MakeRequest(baseUrl);
+            return private_url;
+        }
     }
 }

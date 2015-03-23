@@ -7,27 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Qiniu.RS;
-using Qiniu.Conf;
-using Qiniu.RSF;
-using Qiniu.RPC;
 
-
-namespace WindowsFormsApplication1
+namespace WindowsFormsApplication1.data_manage
 {
-    public partial class BatchState : Form
+    public partial class saveas : Form
     {
-        public BatchState()
+        public saveas()
         {
             InitializeComponent();
         }
-
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
     }
 }
